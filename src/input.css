@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--mobile-breakpoint: 600px;
+	--tablet-breakpoint: 900px;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: rgba(32, 32, 32, 1);
+	color: white;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.container {
+	padding: 6rem 1rem 0 1rem;
+}
+
+.custom-arrow-prev,
+.custom-arrow-next {
+	height: 4em !important;
+	background-color: transparent !important;
+}
+
+.custom-arrow-next {
+	right: 1rem !important;
+}
+
+.custom-arrow-prev {
+	left: 1rem !important;
+}
+
+/* tailwind sm */
+
+@media screen and (min-width: 640px) {
+}
+
+/* tailwind md */
+
+@media screen and (min-width: 768px) {
+	.container {
+		padding: 10.5rem 5% 0 5%;
+	}
+	.custom-arrow-next {
+		right: 2% !important;
+	}
+
+	.custom-arrow-prev {
+		left: 2% !important;
+	}
+}
+
+/*  tailwind lg */
+@media screen and (min-width: 1024px) {
+}
+
+/*  tailwind xl */
+@media screen and (min-width: 1280px) {
+	.container {
+		padding: 10.5rem 2% 0 2%;
+	}
+	.custom-arrow-next {
+		right: 8% !important;
+	}
+
+	.custom-arrow-prev {
+		left: 8% !important;
+	}
+}
+
+/* tailwind 2xl */
+@media screen and (min-width: 1536px) {
+	.custom-arrow-next {
+		right: 8rem !important;
+	}
+
+	.custom-arrow-prev {
+		left: 8rem !important;
+	}
+}

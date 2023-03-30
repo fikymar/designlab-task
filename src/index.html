@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fotbalový klub</title>
+		<link href="/dist/output.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+			integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw="
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+			integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU="
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<!-- Nav -->
+		<nav
+			class="fixed top-0 z-40 w-full flex px-4 md:px-small xl:px-desktop py-4 gap-4 items-center justify-between bg-background"
+		>
+			<img src="../assets/logo.svg" class="h-8" alt="logo" />
+			<div class="flex gap-8">
+				<ul class="gap-8 uppercase text-base text-white">
+					<a href="#about" class="bg-primary py-4 px-4">O nás</a>
+					<a href="#players" class="py-4 px-4">Hráči</a>
+					<a href="#services" class="py-4 px-4">Služby</a>
+					<a href="#contact" class="py-4 px-4">Kontakt</a>
+				</ul>
+				<ul class="flex gap-8">
+					<img src="../assets/linkedin.png" class="h-6" alt="logo" />
+					<img src="../assets/insta.png" class="h-6" alt="logo" />
+					<img src="../assets/en.png" class="h-6" alt="logo" />
+				</ul>
+			</div>
+		</nav>
+
+		<!-- carousel -->
+		<section class="splide mt-20 mb-8" aria-label="Slide Container Example">
+			<div class="splide__arrows">
+				<img
+					src="../assets/arrow-prev.svg"
+					class="splide__arrow splide__arrow--prev custom-arrow-prev"
+				/>
+				<img
+					src="../assets/arrow-next.svg"
+					class="splide__arrow splide__arrow--next custom-arrow-next"
+				/>
+			</div>
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<div class="splide__slide__container relative w-full">
+							<img
+								src="../assets/slide.jpg"
+								class="h-full w-full object-cover object-top"
+								alt="'slide 1"
+							/>
+							<p
+								class="absolute bottom-20 left-4 md:left-small xl:left-desktop drop-shadow"
+							>
+								Lorem Ipsum Dolor Sit Amet
+							</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="splide__slide__container">
+							<img
+								src="../assets/slide2.jpg"
+								class="h-full w-full object-cover object-top"
+								alt="slide 2"
+							/>
+							<div
+								class="absolute bottom-20 left-4 md:left-small xl:left-desktop drop-shadow"
+							>
+								<p class="text-3xl font-bold italic">Petr Čech</p>
+								<p>Chelsea FC</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section
+			class="mx-4 md:mx-small xl:mx-desktop flex flex-col md:flex-row justify-between gap-8"
+		>
+			<img src="../assets/business-people-office.png" class="h-full md:w-1/2" />
+			<article
+				class="flex flex-col gap-8 justify-between items-start max-w-fit"
+			>
+				<h1 class="uppercase text-[80px] font-bold italic">O nás</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel
+					lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.
+					Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Vestibulum
+					fermentum tortor id mi. Nullam feugiat, turpis at pulvinar vulputate,
+					erat libero tristique tellus, nec bibendum odio risus sit amet ante.
+					Donec ipsum massa, ullamcorper in.
+				</p>
+				<button class="border border-white rounded-lg px-[2em] py-[0.5em]">
+					Kontakt
+				</button>
+			</article>
+		</section>
+
+		<!-- Team -->
+		<section
+			class="my-8 py-8 px-4 md:px-small xl:px-desktop flex flex-col gap-8 w-full bg-primary"
+		>
+			<h2 class="uppercase text-[80px] font-bold italic">Náš tým</h2>
+			<div class="flex justify-center gap-8">
+				<img
+					src="../assets/hanus.jpg"
+					alt="Daniel Hanus"
+					width="208"
+					height="208"
+					class="object-cover object-top rounded-lg"
+				/>
+				<div class="flex flex-col max-w-screen-sm">
+					<h3>Daniel Hanus</h3>
+					<p>CEO</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel
+						lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.
+						Morbi leo mi, nonummy eget tristique non, rhoncus non leo.
+						Vestibulum fermentum tortor id mi. Nullam feugiat, turpis at
+						pulvinar vulputate, erat libero tristique tellus, nec bibendum odio
+						risus sit amet ante.
+					</p>
+				</div>
+			</div>
+			<div class="flex justify-center items-start gap-8">
+				<img
+					src="../assets/placeholder-team.png"
+					width="208"
+					height="208"
+					class="object-cover object-top rounded-lg"
+					alt="Daniel Hanus"
+				/>
+				<div class="flex flex-col max-w-screen-sm">
+					<h3>Daniel Hanus</h3>
+					<p>CEO</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel
+						lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.
+						Morbi leo mi, nonummy eget tristique non, rhoncus non leo.
+						Vestibulum fermentum tortor id mi. Nullam feugiat, turpis at
+						pulvinar vulputate, erat libero tristique tellus, nec bibendum odio
+						risus sit amet ante.
+					</p>
+				</div>
+			</div>
+		</section>
+
+			<!-- Players -->
+			<section
+			class="mx-4 md:mx-small xl:mx-desktop flex flex-col  justify-between gap-8"
+		>
+				<h2 class="uppercase text-[80px] font-bold italic">Hráči</h2>
+				<button class="border border-white rounded-lg px-[2em] py-[0.5em] self-center">
+					Všichni hráči
+				</button>
+			</article>
+		</section>
+
+		<script src="./js/splide.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
