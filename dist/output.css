@@ -532,20 +532,12 @@ video {
   bottom: 5rem;
 }
 
-.left-10 {
-  left: 2.5rem;
+.left-4 {
+  left: 1rem;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.left-4 {
-  left: 1rem;
 }
 
 .z-40 {
@@ -588,10 +580,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .max-w-fit {
@@ -671,6 +659,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-\[2em\] {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -681,29 +674,14 @@ video {
   padding-bottom: 2rem;
 }
 
-.px-\[2em\] {
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.py-\[1em\] {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
 .py-\[0\.5em\] {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
 
-.px-\[1em\] {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.px-\[1\.5em\] {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-\[80px\] {
@@ -713,16 +691,6 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -745,11 +713,6 @@ video {
 .drop-shadow {
   --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-:root {
-  --mobile-breakpoint: 600px;
-  --tablet-breakpoint: 900px;
 }
 
 body {

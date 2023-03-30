@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--mobile-breakpoint: 600px;
-	--tablet-breakpoint: 900px;
-}
-
 body {
 	font-family: "Poppins", sans-serif;
 	background-color: rgba(32, 32, 32, 1);
