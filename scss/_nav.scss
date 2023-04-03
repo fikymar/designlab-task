@@ -1,0 +1,70 @@
+nav {
+	@apply fixed top-0 z-40 flex h-16 w-full items-center justify-between gap-4 bg-background px-4 md:px-small xl:px-desktop;
+
+	& .nav-link {
+		@apply inline-block h-full  px-4 py-5 hover:bg-primary;
+	}
+}
+
+.active {
+	@apply bg-primary;
+}
+
+.nav-list {
+	&.open {
+		animation: 1s ease 0s openNav;
+
+		@apply fixed bottom-0 left-0 right-0 top-0 flex h-auto max-h-[350px] w-screen flex-col bg-background pb-16 pt-16;
+	}
+}
+@keyframes openNav {
+	0% {
+		height: 0;
+	}
+	50% {
+		height: 120%;
+	}
+	100% {
+		height: 100%;
+	}
+}
+
+.hamburger {
+	@apply -mt-2  block cursor-pointer p-8 md:hidden;
+
+	&__first,
+	&__second,
+	&__third {
+		background-color: white;
+		height: 2px;
+		width: 1.5rem;
+		position: relative;
+		transition: all 0.5s ease-in-out;
+		z-index: 50;
+	}
+
+	&__first {
+		top: 0;
+	}
+
+	&__second {
+		top: 5px;
+	}
+
+	&__third {
+		top: 10px;
+	}
+
+	.cross--first {
+		transform: translate(0, 5px) rotate(45deg);
+		transform-origin: center;
+	}
+	.cross--second {
+		display: none;
+	}
+
+	.cross--third {
+		transform: translate(0, -7px) rotate(-45deg);
+		transform-origin: center;
+	}
+}

@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
 	var splide = new Splide('.splide', {
-		type: 'fade',
-		height: '90vh',
+		type: 'loop',
+		height: '100vh',
 		width: '100vw',
+		autoplay: true,
 		perPage: 1,
 		breakpoints: {
-			640: {
-				height: '50vh',
+			768: {
+				height: '75vh',
 				width: '100vw',
 			},
 		},
