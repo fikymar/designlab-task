@@ -7,12 +7,14 @@ const line1 = document.querySelector('.hamburger__first')
 const line2 = document.querySelector('.hamburger__second')
 const line3 = document.querySelector('.hamburger__third')
 
+// Nav
 navLinks.forEach((link) => {
-	// Active link onload
+	// Active link on page load
 	if (link.href === window.location.href) {
 		link.classList.add('active')
 	}
 
+	// Active link on click
 	link.addEventListener('click', function () {
 		navLinks.forEach((notActiveLink) => {
 			notActiveLink.classList.remove('active')
@@ -27,10 +29,11 @@ navLinks.forEach((link) => {
 	})
 })
 
-//nav
+// Hamburger
 hamburger.addEventListener('click', () => {
 	navList.classList.toggle('open')
 
+	// Icon
 	line1.classList.toggle('cross--first')
 	line2.classList.toggle('cross--second')
 	line3.classList.toggle('cross--third')

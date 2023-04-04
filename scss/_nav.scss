@@ -2,7 +2,24 @@ nav {
 	@apply fixed top-0 z-40 flex h-16 w-full items-center justify-between gap-4 bg-background px-4 md:px-small xl:px-desktop;
 
 	& .nav-link {
-		@apply inline-block h-full  px-4 py-5 hover:bg-primary;
+		@apply relative inline-block h-full px-4 py-5;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 2px;
+			width: 0%;
+			background: white;
+			transition: width 0.3s ease;
+		}
+
+		&:hover {
+			&:before {
+				width: 100%;
+			}
+		}
 	}
 }
 
@@ -11,21 +28,11 @@ nav {
 }
 
 .nav-list {
+	height: 0;
 	&.open {
-		animation: 1s ease 0s openNav;
-
-		@apply fixed bottom-0 left-0 right-0 top-0 flex h-auto max-h-[350px] w-screen flex-col bg-background pb-16 pt-16;
-	}
-}
-@keyframes openNav {
-	0% {
-		height: 0;
-	}
-	50% {
-		height: 120%;
-	}
-	100% {
+		@apply fixed bottom-0 left-0 right-0 top-0 flex  max-h-[350px] w-screen flex-col bg-background pb-16 pt-16;
 		height: 100%;
+		transition: width 0.5s ease;
 	}
 }
 
