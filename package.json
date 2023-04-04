@@ -11,11 +11,19 @@
 	"author": "",
 	"license": "MIT",
 	"devDependencies": {
+		"autoprefixer": "^10.4.14",
+		"cssnano": "^6.0.0",
+		"gulp-imagemin": "^7.0.0",
+		"gulp-postcss": "^9.0.1",
+		"gulp-sass": "^5.1.0",
+		"gulp-terser": "^2.1.0",
+		"gulp-webp": "^4.0.1",
 		"prettier": "^2.8.7",
 		"prettier-plugin-tailwindcss": "^0.2.6",
+		"sass": "^1.60.0",
 		"tailwindcss": "^3.3.0"
 	},
 	"dependencies": {
-		"@splidejs/splide": "^4.1.4"
+		"gulp": "^4.0.2"
 	}
 }

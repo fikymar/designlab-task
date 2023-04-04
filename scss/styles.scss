@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './variables.scss';
+@import './nav.scss';
+@import './slider.scss';
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: $background;
+	color: white;
+	width: 100vw;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+.heading {
+	@apply text-4xl font-bold italic lg:text-5xl;
+}
+
+.btn-outline {
+	@apply rounded-lg border border-white px-[2em] py-[0.5em] transition duration-300 hover:border-primary hover:bg-primary;
+}
+
+.team {
+	&-container {
+		@apply flex flex-col items-start justify-center gap-8 md:flex-row;
+	}
+
+	&-img {
+		@apply aspect-square h-[208px] w-[208px] shrink-0 overflow-hidden rounded-lg object-cover object-top;
+	}
+
+	&-subheading {
+		@apply mb-4 text-2xl font-semibold italic md:text-3xl;
+	}
+}
+
+.services {
+	@apply overflow-x-hidden bg-primary pb-16 pl-4 pt-16 md:pb-48 md:pl-small xl:pl-desktop;
+
+	&-grid {
+		@apply mt-8 flex flex-col gap-8 overflow-visible md:grid md:grid-cols-[1fr_1fr_1fr] md:grid-rows-[1fr_1fr_40vh] md:gap-4 lg:gap-16;
+	}
+
+	&-icon {
+		@apply w-12 object-cover md:w-14 lg:w-16;
+	}
+
+	&-text {
+		@apply z-10 max-w-[25ch] text-lg font-medium lg:text-2xl;
+	}
+
+	&-img {
+		@apply -mr-[10%] ml-auto h-full w-[150%] overflow-visible object-cover md:col-start-3 md:row-span-2 md:row-end-4 md:mr-0;
+	}
+}
+
+.social {
+	@apply relative mr-4 flex scroll-mt-[66px] flex-col justify-center gap-8 rounded-lg bg-background pb-16 pt-8 drop-shadow-custom md:mr-small md:grid md:grid-cols-[1fr_1fr] md:pr-[10%] lg:mr-desktop 2xl:pr-[15%];
+
+	&-img {
+		@apply absolute -top-[30%] hidden h-[150%] object-cover md:left-[10%] md:block lg:-top-[50%] lg:h-[200%] 2xl:left-[15%];
+		-moz-overflow: visible;
+	}
+
+	&-link {
+		@apply flex h-16 w-16 items-center justify-center rounded-full bg-white transition hover:bg-opacity-90;
+
+		& img {
+			@apply h-6 w-6 transition-transform duration-300  md:justify-self-end;
+		}
+	}
+}
+
+.footer-inner {
+	@apply mx-4 border-t border-t-[rgba(255,_255,_255,_0.28)] pb-16 pt-8 text-lg md:mx-small xl:mx-desktop;
+}

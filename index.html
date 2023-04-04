@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Fotbalový klub</title>
-		<link href="./dist/output.css" rel="stylesheet" />
+		<link href="css/styles.css" rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -26,47 +26,63 @@
 	</head>
 	<body>
 		<!-- Nav -->
-		<nav
-			class="fixed top-0 z-40 flex w-full items-center justify-between gap-4 bg-background px-4 py-4 md:px-small xl:px-desktop"
-		>
-			<img src="../assets/logo.svg" class="h-8" alt="logo" />
-			<div class="flex gap-8">
-				<ul class="gap-8 text-base uppercase text-white">
-					<a href="#about" class="nav-link px-4 py-4">O nás</a>
-					<a href="#players" class="nav-link px-4 py-4">Hráči</a>
-					<a href="#services" class="nav-link px-4 py-4">Služby</a>
-					<a href="#contact" class="nav-link px-4 py-4">Kontakt</a>
+		<nav>
+			<img src="../assets/logo.svg" class="z-50 h-8" alt="logo" />
+
+			<div class="flex items-center gap-8">
+				<ul
+					class="nav-list hidden items-center text-base uppercase md:flex"
+				>
+					<li>
+						<a href="#about" class="nav-link">O nás</a>
+					</li>
+					<li><a href="#players" class="nav-link">Hráči</a></li>
+					<li><a href="#services" class="nav-link">Služby</a></li>
+					<li><a href="#contact" class="nav-link">Kontakt</a></li>
 				</ul>
-				<ul class="flex gap-8">
-					<img
-						src="./assets/linkedin.png"
-						class="h-6 rounded-sm"
-						alt="logo"
-					/>
-					<img
-						src="./assets/insta.png"
-						class="h-6 rounded-sm"
-						alt="logo"
-					/>
-					<img
-						src="./assets/en.png"
-						class="h-6 rounded-sm"
-						alt="logo"
-					/>
+				<ul class="z-50 flex items-center gap-4 sm:gap-8">
+					<li class="group">
+						<a href="" target="_blank">
+							<img
+								src="./assets/webp/linkedin.webp"
+								class="h-6 rounded-sm transition-transform group-hover:scale-110"
+								alt="linkedin"
+						/></a>
+					</li>
+					<li class="group">
+						<a href="" target="_blank">
+							<img
+								src="./assets/webp/insta.webp"
+								class="h-6 rounded-sm transition-transform group-hover:scale-110"
+								alt="instagram"
+						/></a>
+					</li>
+					<button class="group">
+						<img
+							src="./assets/webp/en.webp"
+							class="rounded-sm transition-transform group-hover:scale-110"
+							alt="language"
+						/>
+					</button>
 				</ul>
+			</div>
+			<div class="hamburger">
+				<div class="hamburger__first"></div>
+				<div class="hamburger__second"></div>
+				<div class="hamburger__third"></div>
 			</div>
 		</nav>
 
 		<!-- Carousel -->
-		<section class="splide mb-8 mt-16" aria-label="Slide Container Example">
+		<section class="splide mb-8 mt-16 md:mt-0">
 			<div class="splide__arrows">
 				<img
 					src="./assets/arrow-prev.svg"
-					class="splide__arrow splide__arrow--prev custom-arrow-prev"
+					class="splide__arrow splide__arrow--prev"
 				/>
 				<img
 					src="./assets/arrow-next.svg"
-					class="splide__arrow splide__arrow--next custom-arrow-next"
+					class="splide__arrow splide__arrow--next"
 				/>
 			</div>
 			<div class="splide__track">
@@ -74,12 +90,12 @@
 					<li class="splide__slide">
 						<div class="splide__slide__container relative w-full">
 							<img
-								src="../assets/slide.jpg"
+								src="../assets/webp/slide.webp"
 								class="h-full w-full object-cover object-top"
 								alt="'slide 1"
 							/>
 							<p
-								class="absolute bottom-20 left-4 drop-shadow md:left-small xl:left-desktop"
+								class="absolute bottom-10 left-4 md:bottom-20 md:left-small xl:left-desktop"
 							>
 								Lorem Ipsum Dolor Sit Amet
 							</p>
@@ -88,14 +104,14 @@
 					<li class="splide__slide">
 						<div class="splide__slide__container">
 							<img
-								src="./assets/slide2.jpg"
+								src="./assets/webp/slide2.webp"
 								class="h-full w-full object-cover object-top"
 								alt="slide 2"
 							/>
 							<div
-								class="absolute bottom-20 left-4 drop-shadow md:left-small xl:left-desktop"
+								class="absolute bottom-10 left-4 md:bottom-20 md:left-small xl:left-desktop"
 							>
-								<p class="text-3xl font-bold italic">
+								<p class="text-xl font-bold italic md:text-3xl">
 									Petr Čech
 								</p>
 								<p>Chelsea FC</p>
@@ -109,17 +125,17 @@
 		<!-- About -->
 		<section
 			id="about"
-			class="mx-4 my-16 flex scroll-pt-32 flex-col justify-between gap-8 md:mx-small md:flex-row md:gap-16 xl:mx-desktop"
+			class="mx-4 my-16 flex scroll-mt-[64px] flex-col justify-between gap-8 md:mx-small md:flex-row md:gap-16 xl:mx-desktop"
 		>
 			<img
-				src="./assets/business-people-office.png"
+				src="./assets/webp/business-people-office.webp"
 				class="h-full rounded-lg object-cover md:w-1/2"
 			/>
-			<article
-				class="flex h-max max-w-fit flex-col items-start justify-between gap-8 py-8"
+			<div
+				class="flex h-max max-w-fit flex-col items-start justify-between gap-8 xl:py-8"
 			>
-				<h1 class="text-[80px] font-bold uppercase italic">O nás</h1>
-				<p>
+				<h1 class="heading uppercase">O nás</h1>
+				<p class="max-w-[80ch]">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 					Sed vel lectus. Donec odio tempus molestie, porttitor ut,
 					iaculis quis, sem. Morbi leo mi, nonummy eget tristique non,
@@ -128,31 +144,26 @@
 					tellus, nec bibendum odio risus sit amet ante. Donec ipsum
 					massa, ullamcorper in.
 				</p>
-				<a
-					class="rounded-lg border border-white px-[2em] py-[0.5em]"
-					href="/#contact"
-				>
-					Kontakt
-				</a>
-			</article>
+				<a class="btn-outline" href="/#contact">Kontakt</a>
+			</div>
 		</section>
 
 		<!-- Team -->
 		<section
 			class="flex w-full flex-col gap-8 bg-primary px-4 py-8 md:px-small md:py-16 xl:px-desktop"
 		>
-			<h2 class="text-[80px] font-bold uppercase italic">Náš tým</h2>
-			<div class="flex justify-center gap-8">
+			<h2 class="heading uppercase">Náš tým</h2>
+			<div class="team-container">
 				<img
-					src="./assets/hanus.jpg"
+					src="./assets/webp/hanus.webp"
 					alt="Daniel Hanus"
 					width="208"
 					height="208"
-					class="h-[208px] w-[208px] overflow-hidden rounded-lg object-cover object-top"
+					class="team-img"
 				/>
-				<div class="flex max-w-xl flex-col">
-					<h3>Daniel Hanus</h3>
-					<p>CEO</p>
+				<div class="flex max-w-[60ch] flex-col">
+					<h3 class="team-subheading">Daniel Hanus</h3>
+					<p class="mb-8 text-lg font-medium">CEO</p>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing
 						elit. Sed vel lectus. Donec odio tempus molestie,
@@ -164,17 +175,17 @@
 					</p>
 				</div>
 			</div>
-			<div class="flex items-start justify-center gap-8">
+			<div class="team-container">
 				<img
-					src="./assets/placeholder-team.png"
+					src="./assets/webp/placeholder-team.webp"
 					width="208"
 					height="208"
-					class="h-[208px] w-[208px] overflow-hidden rounded-lg object-cover object-top"
+					class="team-img"
 					alt="Daniel Hanus"
 				/>
-				<div class="flex max-w-xl flex-col">
-					<h3>Daniel Hanus</h3>
-					<p>CEO</p>
+				<div class="flex max-w-[60ch] flex-col">
+					<h3 class="team-subheading">Daniel Hanus</h3>
+					<p class="mb-8 text-lg font-medium">CEO</p>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing
 						elit. Sed vel lectus. Donec odio tempus molestie,
@@ -191,82 +202,98 @@
 		<!-- Players -->
 		<section
 			id="players"
-			class="mx-4 flex scroll-mt-16 flex-col justify-between gap-8 md:mx-small xl:mx-desktop"
+			class="mx-4 flex scroll-mt-[64px] flex-col justify-between gap-8 py-16 md:mx-small xl:mx-desktop"
 		>
-			<h2 class="text-[80px] font-bold uppercase italic">Hráči</h2>
-			<button
-				class="self-center rounded-lg border border-white px-[2em] py-[0.5em]"
-			>
-				Všichni hráči
-			</button>
+			<h2 class="heading uppercase">Hráči</h2>
+			<div class="flex flex-col gap-8 md:flex-row md:gap-4 lg:gap-8">
+				<div class="rounded-lg bg-primary">
+					<img
+						src="/assets/webp/kalabiska.webp"
+						alt="Jan Kalabiška"
+						class="rounded-t-lg"
+					/>
+					<div class="flex flex-col items-center py-8">
+						<h3 class="text-2xl italic lg:text-3xl">
+							Jan Kalabiška
+						</h3>
+						<p class="mb-8">1 FC Slovácko</p>
+						<a href="" class="underline">Transfer market</a>
+					</div>
+				</div>
+				<div class="rounded-lg bg-primary">
+					<img
+						src="/assets/webp/kalabiska.webp"
+						alt="Jan Kalabiška"
+						class="rounded-t-lg"
+					/>
+					<div class="flex flex-col items-center py-8">
+						<h3 class="text-2xl italic lg:text-3xl">
+							Jan Kalabiška
+						</h3>
+						<p class="mb-8">1 FC Slovácko</p>
+						<a href="" class="underline">Transfer market</a>
+					</div>
+				</div>
+				<div class="rounded-lg bg-primary">
+					<img
+						src="/assets/webp/kalabiska.webp"
+						alt="Jan Kalabiška"
+						class="rounded-t-lg"
+					/>
+					<div class="flex flex-col items-center py-8">
+						<h3 class="text-2xl italic lg:text-3xl">
+							Jan Kalabiška
+						</h3>
+						<p class="mb-8">1 FC Slovácko</p>
+						<a href="" class="underline">Transfer market</a>
+					</div>
+				</div>
+			</div>
+			<button class="btn-outline self-center">Všichni hráči</button>
 		</section>
 
 		<!-- Services -->
-		<section
-			id="services"
-			class="scroll-mt-16 overflow-hidden bg-primary px-4 pb-8 pt-12 md:px-small md:pb-48 xl:px-desktop"
-		>
-			<h2 class="text-4xl font-bold italic md:text-[80px]">
-				Naše služby
-			</h2>
-			<div
-				class="mt-8 grid grid-rows-[1fr_1fr_2fr] gap-16 overflow-visible md:grid-cols-3"
-			>
+		<section id="services" class="services scroll-mt-[64px]">
+			<h2 class="heading">Naše služby</h2>
+			<div class="services-grid">
 				<div class="flex items-center gap-8 md:col-start-1">
-					<img
-						src="./assets/icon.png"
-						class="w-16 object-cover md:w-20"
-					/>
-					<p class="max-w-[20ch] text-lg font-medium md:text-2xl">
+					<img src="./assets/webp/icon.webp" class="services-icon" />
+					<p class="services-text">
 						Uzavírání a prodlužování hráčských smluv
 					</p>
 				</div>
 				<div class="flex items-center gap-8 md:col-start-2">
 					<img
-						src="./assets/icon-balls.png"
-						class="w-16 object-cover md:w-20"
+						src="./assets/webp/icon-balls.webp"
+						class="services-icon"
 					/>
-					<p class="max-w-[20ch] text-lg font-medium md:text-2xl">
-						Realizace přestupů celosvětově
-					</p>
+					<p class="services-text">Realizace přestupů celosvětově</p>
 				</div>
 				<div class="flex items-center gap-8 md:col-start-1">
-					<img
-						src="./assets/icon.png"
-						class="w-16 object-cover md:w-20"
-					/>
-					<p class="max-w-[20ch] text-lg font-medium md:text-2xl">
+					<img src="./assets/webp/icon.webp" class="services-icon" />
+					<p class="services-text">
 						Uzavírání a prodlužování hráčských smluv
 					</p>
 				</div>
 				<div class="flex items-center gap-8">
 					<img
-						src="./assets/icon-balls.png"
-						class="w-16 object-cover md:w-20"
+						src="./assets/webp/icon-balls.webp"
+						class="services-icon"
 					/>
-					<p class="max-w-[20ch] text-lg font-medium md:text-2xl">
-						Realizace přestupů celosvětově
-					</p>
+					<p class="services-text">Realizace přestupů celosvětově</p>
 				</div>
-				<img
-					src="./assets/player.png"
-					class="-mr-[100px] ml-auto h-full w-[150%] overflow-visible object-cover md:col-start-3 md:row-span-2 md:row-end-4 md:mr-0"
-				/>
+				<img src="./assets/webp/player.webp" class="services-img" />
 			</div>
 
 			<!-- Social -->
-			<section
-				id="contact"
-				class="relative flex h-max scroll-mt-16 flex-col justify-center gap-8 rounded-lg bg-background pb-16 pt-8 md:grid md:grid-cols-[1fr_2fr] md:pr-16 xl:pr-24 2xl:grid-cols-[1fr_1.5fr] 2xl:pr-[15%]"
-			>
-				<img
-					src="./assets/phone.png"
-					class="absolute -top-[50%] hidden h-[200%] w-fit md:left-16 md:block 2xl:left-[15%]"
-				/>
-				<article
+			<article id="contact" class="social">
+				<img src="./assets/webp/phone.webp" class="social-img" />
+				<div
 					class="flex flex-col items-start justify-between gap-8 px-8 md:col-start-2 md:px-0"
 				>
-					<h2 class="text-5xl font-bold italic">Sledujte nás</h2>
+					<h2 class="text-3xl font-bold italic md:text-4xl">
+						Sledujte nás
+					</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing
 						elit. Sed vel lectus. Donec odio tempus molestie,
@@ -275,38 +302,28 @@
 						fermentum tortor id mi.
 					</p>
 					<div class="flex gap-8">
-						<a
-							role="button"
-							class="group flex h-16 w-16 items-center justify-center rounded-full bg-white transition hover:bg-opacity-90"
-						>
+						<a role="button" class="social-link group">
 							<img
-								src="./assets/insta.png"
-								class="h-6 w-6 transition-dimensions duration-300 group-hover:h-7 group-hover:w-7"
+								src="./assets/webp/insta.webp"
+								class="group-hover:scale-110"
 							/>
 						</a>
-						<a
-							role="button"
-							class="group flex h-16 w-16 items-center justify-center rounded-full bg-white transition hover:bg-opacity-90"
-						>
+						<a role="button" class="social-link group">
 							<img
-								src="./assets/linkedin.png"
-								class="h-6 w-6 transition-dimensions duration-300 group-hover:h-7 group-hover:w-7"
+								src="./assets/webp/linkedin.webp"
+								class="group-hover:scale-110"
 							/>
 						</a>
 					</div>
-				</article>
-			</section>
+				</div>
+			</article>
 		</section>
 
 		<!-- footer -->
 		<footer class="bg-primary">
-			<div
-				class="mx-4 border-t border-t-[rgba(255,_255,_255,_0.28)] pb-16 pt-8 md:mx-small xl:mx-desktop"
-			>
-				© 2023 Ideal sport s.r.o
-			</div>
+			<div class="footer-inner">© 2023 Ideal sport s.r.o</div>
 		</footer>
-		<script src="./js/splide.js"></script>
-		<script src="./js/main.js"></script>
+		<script src="./js/js-min/splide.js"></script>
+		<script src="./js/js-min/main.js"></script>
 	</body>
 </html>
