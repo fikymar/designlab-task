@@ -64,7 +64,7 @@ body {
 }
 
 .social {
-	@apply relative mr-4 flex scroll-mt-[66px] flex-col justify-center gap-8 rounded-lg bg-background pb-16 pt-8 drop-shadow-custom md:mr-small md:grid md:grid-cols-[1fr_1fr] md:pr-[10%] lg:mr-desktop 2xl:pr-[15%];
+	@apply relative mr-4 flex scroll-mt-[64px] flex-col justify-center gap-8 rounded-lg bg-background pb-16 pt-8 drop-shadow-custom md:mr-small md:grid md:grid-cols-[1fr_1fr] md:pr-[10%] lg:mr-desktop 2xl:pr-[15%];
 
 	&-img {
 		@apply absolute -top-[30%] hidden h-[150%] object-cover md:left-[10%] md:block lg:-top-[50%] lg:h-[200%] 2xl:left-[15%];
