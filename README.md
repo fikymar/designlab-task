@@ -4,4 +4,4 @@
 
 
 ### Style: Tailwind, Scss
-### Gulp - image optimization, js minify
+### Gulp - image optimization, JS compress
